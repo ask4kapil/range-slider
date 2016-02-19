@@ -1,0 +1,35 @@
+{
+  "name": "ion-custom-range",
+  "version": "1.0.0",
+  "description": "Custom range directive for Ionic Framework",
+  "main": "ion-custom-range.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ask4kapil/ion-custom-range.git"
+  },
+  "keywords": [
+    "ionic",
+    "slider",
+    "range",
+    "double"
+  ],
+  "author": "Kapil Kumawat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ask4kapil/ion-custom-range/issues"
+  },
+  "homepage": "https://github.com/ask4kapil/ion-custom-range#readme",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7"
+  }
+}

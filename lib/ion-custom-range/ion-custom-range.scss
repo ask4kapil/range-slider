@@ -1,0 +1,96 @@
+ion-custom-range {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: 43px;
+  margin-left: 10px;
+  margin-right: 10px;
+  .static-background-line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #ccc;
+  }
+  .progress-line {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    margin-top: -1px;
+  }
+  .default-progress-line-bg {
+    background-color: #000;
+  }
+  .slider-tip,.slider-tip-min {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 20px;
+    border-radius: 30px;
+    z-index: 1;
+    background-color: #ffffff;
+    display: none;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .scrubber, .scrubber-min {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    border-radius: 30px;
+    background-color: rgb(255,255,255);
+    z-index: 2;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px #ccc;
+  }
+  &[range-type="range-slider-square"] .scrubber {
+    border: solid 0.375em;
+    border-image: linear-gradient(#fdfdfd, #c4c4c4) 1;
+    box-shadow: 0 0.375em 0.5em -0.125em #808080;
+    background: linear-gradient(#c5c5c5, #efefef);
+  }
+  &[range-type="range-slider-circle"] .scrubber {
+    border: none; /* makes border-box ≡ padding-box */
+    padding: .375em;
+    border-radius: 50%;
+    box-shadow: 0 .375em .5em -.125em #808080,
+    inset 0 -.25em .5em -.125em #bbb;
+    background:
+      linear-gradient(#c5c5c5, #efefef) content-box,
+      linear-gradient(#fdfdfd, #c4c4c4);
+  }
+  &[range-type="range-slider-circle-inner"] .scrubber {
+    border: none;
+    padding: 0.625em;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0.125em, rgb(221, 221, 221) 0px 1px 0.125em inset;
+    background: radial-gradient(transparent 35%, rgb(10, 157, 199)) 50% calc(50% + 0.125em) / 175% 175% content-box content-box, linear-gradient(#387EF5, #387EF5) content-box content-box, linear-gradient(rgb(208, 211, 213), rgb(210, 213, 215));
+
+  }
+  &[range-type="range-slider-circle-inner"] .scrubber-min {
+    border: none;
+    padding: 0.625em;
+    width: 1em;
+    height: 1.25em;
+    top: 60%;
+    border-radius: 50%;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0.125em, rgb(221, 221, 221) 0px 1px 0.125em inset;
+    background: radial-gradient(transparent 35%, rgb(10, 157, 199)) 50% calc(50% + 0.125em) / 175% 175% content-box content-box, linear-gradient(#387EF5, #387EF5) content-box content-box, linear-gradient(rgb(208, 211, 213), rgb(210, 213, 215));
+
+  }
+  .scrubber-min {
+    display: none;
+  }
+  .slider-tip-on + .scrubber, .slider-tip-on + .scrubber-min {
+    background-color: rgba(255,255,255,.1);
+  }
+}

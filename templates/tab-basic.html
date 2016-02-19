@@ -1,0 +1,30 @@
+<ion-view view-title="Basic range">
+  <ion-content class="padding">
+    <div class="list">
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <ion-custom-range ng-model="data.volume" min="0" max="100" tip="true"></ion-custom-range>
+        <i class="icon ion-volume-high"></i>
+      </div>
+      <div class="padding">
+        <span><b>Volume</b>(min="0" max="100"): {{data.volume}}</span>
+      </div>
+      <div class="item range">
+        <i class="icon ion-ios-sunny-outline"></i>
+        <ion-custom-range class="positive" ng-model="data.sunny" min="0" max="100" value="33"></ion-custom-range>
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+      <div class="padding">
+        <span><b>Sunny</b>(min="0" max="100" value="33"): {{data.sunny}}</span>
+      </div>
+      <div class="item range">
+        <i class="icon ion-ios-lightbulb-outline"></i>
+        <ion-custom-range class="positive" ng-model="data.bulb" min="0" max="10" value="4" step="2" tip="true"></ion-custom-range>
+        <i class="icon ion-ios-lightbulb"></i>
+      </div>
+      <div class="padding">
+        <span><b>Bulb</b>(min="0" max="10" value="4" step="2" tip="true"): <b class="positive">{{data.bulb}}</b></span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

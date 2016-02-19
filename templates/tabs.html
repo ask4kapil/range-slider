@@ -1,0 +1,26 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Basic Tab -->
+  <ion-tab title="Basic" icon-off="ion-social-chrome-outline" icon-on="ion-social-chrome" href="#/tab/basic">
+    <ion-nav-view name="tab-basic"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Editable Tab -->
+  <ion-tab title="Editable" icon-off="ion-ios-color-wand-outline" icon-on="ion-ios-color-wand" href="#/tab/editable">
+    <ion-nav-view name="tab-editable"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Advanced Tab -->
+  <ion-tab title="Advanced" icon-off="ion-social-codepen-outline" icon-on="ion-social-codepen" href="#/tab/advanced">
+    <ion-nav-view name="tab-advanced"></ion-nav-view>
+  </ion-tab>
+
+
+
+
+</ion-tabs>

@@ -1,0 +1,19 @@
+{
+  "name": "ion-custom-range",
+  "main": "ion-custom-range.js",
+  "homepage": "https://github.com/ask4kapil/ion-custom-range",
+  "authors": [
+    "kapilkumawat <kapil@ask4kapil.xyz>"
+  ],
+  "description": "Custom range directive for Ionic Framework",
+  "moduleType": [],
+  "keywords": [
+    "ionic",
+    "range",
+    "custom",
+    "double",
+    "range",
+    "slider"
+  ],
+  "license": "MIT"
+}

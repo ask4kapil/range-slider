@@ -1,0 +1,41 @@
+<ion-view view-title="Advanced range">
+  <ion-content class="padding">
+    <div class="list">
+      <div class="item range">
+        <i class="icon ion-ios-lightbulb-outline"></i>
+        <ion-custom-range class="positive" type="double" ng-model="data.bulb" min="0" max="10"
+                          min-value="5" max-value="8" step="1" tip="true"></ion-custom-range>
+        <i class="icon ion-ios-lightbulb"></i>
+      </div>
+      <div class="padding">
+        <span><b>Volume</b> (type="double"): {{data.bulb.minValue}} to {{data.bulb.maxValue}}</span>
+      </div>
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <ion-custom-range range-type="range-slider-square" ng-model="data.volume" min="0" max="100"></ion-custom-range>
+        <i class="icon ion-volume-high"></i>
+      </div>
+      <div class="padding">
+        <span><b>Volume</b>(range-type range-slider-square): {{data.volume}}</span>
+      </div>
+
+      <div class="item range">
+        <i class="icon ion-ios-sunny-outline"></i>
+        <ion-custom-range range-type="range-slider-circle" class="positive" ng-model="data.bulb1" min="0" max="10" value="4" step="2"></ion-custom-range>
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+      <div class="padding">
+        <span><b>Bulb</b>(range-type range-slider-circle): <b class="positive">{{data.bulb1}}</b></span>
+      </div>
+      <div class="item range">
+        <i>Min</i>
+        <ion-custom-range range-type="range-slider-circle-inner" class="positive" type="double" ng-model="data.bulb" min="0" max="10"
+                          min-value="5" max-value="8" step="1"></ion-custom-range>
+        <i>Max</i>
+      </div>
+      <div class="padding">
+        <span><b>Volume</b> (type="double"): {{data.bulb.minValue}} to {{data.bulb.maxValue}}</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
